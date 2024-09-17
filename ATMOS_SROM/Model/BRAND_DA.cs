@@ -36,6 +36,8 @@ namespace ATMOS_SROM.Model
                         item.SUPER_BRAND = reader.IsDBNull(reader.GetOrdinal("SUPER_BRAND")) ? "" : reader.GetString(5);
                       
                         listBRAND.Add(item);
+
+                        
                     }
                     reader.Close();
                 }
