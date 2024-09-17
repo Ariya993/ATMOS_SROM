@@ -6,6 +6,8 @@
 
 
     <h2>
+
+
         Change Password
     </h2>    
     <div id="DivMessage" runat="server" visible="false">
