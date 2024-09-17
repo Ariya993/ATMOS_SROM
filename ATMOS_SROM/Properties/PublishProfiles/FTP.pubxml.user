@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2016-01-13T09:18:12.0000000+07:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArGgZi50BVEG3FdFIFiQT9gAAAAACAAAAAAAQZgAAAAEAACAAAAAuQUYSesJBC/fIcIhTZy9jr5TlSxd7S7SNKBE9y4uGkAAAAAAOgAAAAAIAACAAAAA5+31FwjDKjwMGavDP1PUTCPicindISGFSC1D+uSk3xSAAAABuLAWXHPMzB/xrArQ9f9tGkvs0O+hsRcVvxKf5BJ4zFUAAAAAX+BAbsri9tgRnv/fNv3iBQqEiDAwmvr7pw8ayxCPx564e64G8cG3IMUBmEIpjkfzt9HYBJeBH85fcl22YafD9</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>08/06/2015 10:54:12</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>08/06/2015 15:58:26</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="bin/707SROM.dll">
+      <publishTime>08/18/2015 09:09:45</publishTime>
+    </File>
+    <File Include="bin/707SROM.pdb">
+      <publishTime>08/18/2015 09:09:45</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/08/2011 13:18:12</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>08/06/2011 22:01:40</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>05/13/2009 09:00:18</publishTime>
+    </File>
+    <File Include="bin/NPOI.HPSF.dll">
+      <publishTime>05/13/2009 09:00:16</publishTime>
+    </File>
+    <File Include="bin/NPOI.HSSF.dll">
+      <publishTime>05/30/2009 13:04:48</publishTime>
+    </File>
+    <File Include="bin/NPOI.POIFS.dll">
+      <publishTime>05/13/2009 09:00:16</publishTime>
+    </File>
+    <File Include="bin/NPOI.Util.dll">
+      <publishTime>05/13/2009 09:00:16</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Image/b_edit.png">
+      <publishTime>05/12/2008 00:00:00</publishTime>
+    </File>
+    <File Include="Image/images.png">
+      <publishTime>08/07/2015 15:23:43</publishTime>
+    </File>
+    <File Include="Master/Article.aspx">
+      <publishTime>08/17/2015 01:20:56</publishTime>
+    </File>
+    <File Include="Sales/Sales.aspx">
+      <publishTime>08/14/2015 17:32:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>08/17/2015 14:25:15</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>08/13/2015 14:40:02</publishTime>
+    </File>
+    <File Include="Warehouse/Warehouse.aspx">
+      <publishTime>08/17/2015 02:10:26</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/18/2015 09:16:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

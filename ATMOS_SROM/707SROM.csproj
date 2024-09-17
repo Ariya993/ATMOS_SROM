@@ -1,0 +1,1147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{465BD6E3-2E5A-45C9-8677-D6CE09C57A2E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_707SROM</RootNamespace>
+    <AssemblyName>707SROM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50508.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PointOfService, Version=1.14.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.PointOfService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.PointOfService.ControlBase, Version=1.14.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.PointOfService.ControlBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ChangePass.aspx" />
+    <Content Include="Configuration\Configuration.aspx" />
+    <Content Include="Configuration\Member.aspx" />
+    <Content Include="Image\all.jpg" />
+    <Content Include="Image\b_drop.png" />
+    <Content Include="Image\b_edit.png" />
+    <Content Include="Image\b_loading.gif" />
+    <Content Include="Image\b_ok.png" />
+    <Content Include="Image\Logo.png" />
+    <Content Include="Image\Logo_707.png" />
+    <Content Include="Image\Logo_FP.png" />
+    <Content Include="Image\Logo_Melissa.png" />
+    <Content Include="Image\Logo_SDS.png" />
+    <Content Include="Image\Logo_SOS.png" />
+    <Content Include="Image\Logo_Superga.png" />
+    <Content Include="Image\pdf.png" />
+    <Content Include="Laporan\LapHarian.aspx" />
+    <Content Include="Laporan\LapSales.aspx" />
+    <Content Include="Laporan\LapStock.aspx" />
+    <Content Include="Master\Acara.aspx" />
+    <Content Include="Master\ArticleJenahara.aspx" />
+    <Content Include="Master\Article.aspx" />
+    <Content Include="Master\EPC.aspx" />
+    <Content Include="Master\MasterSupplierJenahara.aspx" />
+    <Content Include="Master\MasterSupplier.aspx" />
+    <Content Include="Master\Member.aspx" />
+    <Content Include="Master\POTracer.aspx" />
+    <Content Include="Master\Promo.aspx" />
+    <Content Include="Master\Promo2.aspx" />
+    <Content Include="Master\PurchaseOrderJenahara.aspx" />
+    <Content Include="Master\PurchaseOrder.aspx" />
+    <Content Include="Master\PurchaseOrderTracer.aspx" />
+    <Content Include="Master\Showroom.aspx" />
+    <Content Include="Master\ShowRoomEdit.aspx" />
+    <Content Include="Master\SKU.aspx" />
+    <Content Include="Master\User.aspx" />
+    <Content Include="Master\Voucher.aspx" />
+    <Content Include="Reports\srptAdjustmentManual.aspx" />
+    <Content Include="Reports\sRptMutasiStock.aspx" />
+    <Content Include="Reports\srptSaldoAwal.aspx" />
+    <Content Include="Reports\srptSales.aspx" />
+    <Content Include="Reports\srptSalesThru.aspx" />
+    <Content Include="Reports\srptStock.aspx" />
+    <Content Include="Reports\srptStockOpname.aspx" />
+    <Content Include="Reports\srptTotalPenjualanPerProduct.aspx" />
+    <Content Include="Reports\SRPTTRANSFERSTOCK.aspx" />
+    <Content Include="Report\RptLapHarianThn.aspx" />
+    <Content Include="Report\RptMutasiStockPOS.aspx" />
+    <Content Include="Report\RptPenjualan.aspx" />
+    <Content Include="Report\RptStock.aspx" />
+    <Content Include="Sales\PrintStruck.aspx" />
+    <Content Include="Sales\Sale.aspx" />
+    <Content Include="Sales\Whole.aspx" />
+    <Content Include="Sales\WholeSalesManualInput.aspx" />
+    <Content Include="Sales\WholeSalesNew.aspx" />
+    <Content Include="Sales\WholeSalesWareHouse.aspx" />
+    <Content Include="Styles\b_loading.gif" />
+    <Content Include="TestDummy\DummyRpt.aspx" />
+    <Content Include="TestDummy\ReportPrintDummy.aspx" />
+    <Content Include="TestDummy\TestCOMMPORT.aspx" />
+    <Content Include="TestDummy\TestDecryptPass.aspx" />
+    <Content Include="TestDummy\TestReprint.aspx" />
+    <Content Include="TestDummy\TestRptDeisBI.aspx" />
+    <Content Include="TestDummy\TestSearchShowroomForSalesPage.aspx" />
+    <Content Include="TestDummy\TestSO.aspx" />
+    <Content Include="TestPrint.aspx" />
+    <Content Include="Warehouse\GoodReceiveJenahara.aspx" />
+    <Content Include="Warehouse\PopUp.aspx" />
+    <Content Include="Report\Margin.aspx" />
+    <Content Include="Report\ReportSales.aspx" />
+    <Content Include="Report\RptTotalSales.aspx" />
+    <Content Include="Sales\Sales.aspx" />
+    <Content Include="Sales\Wholesale.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Upload\Upload.aspx" />
+    <Content Include="Warehouse\GoodReceive.aspx" />
+    <Content Include="Warehouse\StockOpname.aspx" />
+    <Content Include="Warehouse\Warehouse.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bon\TR_OP_DETAIL.cs" />
+    <Compile Include="ChangePass.aspx.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePass.aspx.designer.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Configuration.aspx.cs">
+      <DependentUpon>Configuration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Configuration.aspx.designer.cs">
+      <DependentUpon>Configuration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatasetPerProduct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatasetPerProduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatasetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatasetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatasetReportAccount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatasetReportAccount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasetSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datasetSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\BRAND.cs" />
+    <Compile Include="Domain\CARD_PAY_POS_TO_EDC.cs" />
+    <Compile Include="Domain\CustomObj\PO_TRACER_D.cs" />
+    <Compile Include="Domain\CustomObj\PO_TRACER_H.cs" />
+    <Compile Include="Domain\CustomObj\TEMP_STRUCK_GWP_PWP.cs" />
+    <Compile Include="Domain\CustomObj\TF_MUTASI_STOCK_POS.cs" />
+    <Compile Include="Domain\CustomObj\vw_CloseSO.cs" />
+    <Compile Include="Domain\CustomObj\VW_REPRINTBON.cs" />
+    <Compile Include="Domain\EXCELL_ALL_RAK_TEMP_SO.cs" />
+    <Compile Include="Domain\EXCELL_RAK_TEMP_SO.cs" />
+    <Compile Include="Domain\EXCEL_DOWNLOAD_STOCK.cs" />
+    <Compile Include="Domain\Laporan\LAP_SLD_STOCK.cs" />
+    <Compile Include="Domain\LAPORAN_HARIAN.cs" />
+    <Compile Include="Domain\MS_ACARA.cs" />
+    <Compile Include="Domain\MS_ACARA_DISC.cs" />
+    <Compile Include="Domain\MS_ACARA_SHOWROOM.cs" />
+    <Compile Include="Domain\MS_ACARA_STATUS.cs" />
+    <Compile Include="Domain\MS_DISCOUNT_SHR.cs" />
+    <Compile Include="Domain\MS_EMPLOYEE.cs" />
+    <Compile Include="Domain\MS_ITEM_GWP_PWP.cs" />
+    <Compile Include="Domain\MS_KARTU_STOCK_HEADER.cs" />
+    <Compile Include="Domain\MS_MENU.cs" />
+    <Compile Include="Domain\MS_PO_DETAIL.cs" />
+    <Compile Include="Domain\MS_ITEM_ACARA.cs" />
+    <Compile Include="Domain\MS_KDBRG.cs" />
+    <Compile Include="Domain\MS_LOG.cs" />
+    <Compile Include="Domain\MS_MEMBER.cs" />
+    <Compile Include="Domain\MS_PARAMETER.cs" />
+    <Compile Include="Domain\MS_PO.cs" />
+    <Compile Include="Domain\MS_PRICE.cs" />
+    <Compile Include="Domain\MS_PROMO.cs" />
+    <Compile Include="Domain\MS_PROMO_SHR.cs" />
+    <Compile Include="Domain\MS_SKU.cs" />
+    <Compile Include="Domain\MS_STAGING_WHOLESALE.cs" />
+    <Compile Include="Domain\MS_VOUCHER.cs" />
+    <Compile Include="Domain\NO_DOC.cs" />
+    <Compile Include="Domain\NO_SALE.cs" />
+    <Compile Include="Domain\Report\TF_DeisBIF.cs" />
+    <Compile Include="Domain\Report\tf_lapHarianPerthn.cs" />
+    <Compile Include="Domain\Report\Tf_ReportPusrchaseOrder.cs" />
+    <Compile Include="Domain\Report\USP_SRPTADJUSMENTMANUAL.cs" />
+    <Compile Include="Domain\Report\USP_SRPTSALES.cs" />
+    <Compile Include="Domain\Report\USP_SRPTSALESTHRU.cs" />
+    <Compile Include="Domain\Report\USP_SRPTSTOCK.cs" />
+    <Compile Include="Domain\Report\USP_SRPTSTOCKOPNAME.cs" />
+    <Compile Include="Domain\Report\USP_SRPTTOTALPENJUALANPERPRODUCT.cs" />
+    <Compile Include="Domain\Report\USP_SRPTTRANSFERSTOCK.cs" />
+    <Compile Include="Domain\SH_ACARA_VALUE.cs" />
+    <Compile Include="Domain\SH_EMPLOYEE.cs" />
+    <Compile Include="Domain\SH_MEMBER.cs" />
+    <Compile Include="Domain\SH_PUTUS_DETAIL.cs" />
+    <Compile Include="Domain\SH_PUTUS_HEADER.cs" />
+    <Compile Include="Domain\SLD_PERIODE.cs" />
+    <Compile Include="Domain\SO_WHOLESALES.cs" />
+    <Compile Include="Domain\SO_WHOLESALES_HEADER.cs" />
+    <Compile Include="Domain\TEMP_DOC.cs" />
+    <Compile Include="Domain\TEMP_KDBRG.cs" />
+    <Compile Include="Domain\TEMP_POS_TO_EDC.cs" />
+    <Compile Include="Domain\TEMP_WHOLESALE.cs" />
+    <Compile Include="Domain\TF_STATISTIC.cs" />
+    <Compile Include="Domain\TRF_PINJAM_DETAIL.cs" />
+    <Compile Include="Domain\TRF_PINJAM_HEADER.cs" />
+    <Compile Include="Domain\TR_ADJUSTMENT.cs" />
+    <Compile Include="Domain\TR_BELI_DETAIL.cs" />
+    <Compile Include="Domain\MS_SHOWROOM.cs" />
+    <Compile Include="Domain\MS_STOCK.cs" />
+    <Compile Include="Domain\MS_USER.cs" />
+    <Compile Include="Domain\OP_DETAIL.cs" />
+    <Compile Include="Domain\OP_HEADER.cs" />
+    <Compile Include="Domain\SH_BAYAR.cs" />
+    <Compile Include="Domain\SH_CARD.cs" />
+    <Compile Include="Domain\SH_JUAL.cs" />
+    <Compile Include="Domain\SH_VOUCHER.cs" />
+    <Compile Include="Domain\TEMP_ACARA.cs" />
+    <Compile Include="Domain\TEMP_GR.cs" />
+    <Compile Include="Domain\TEMP_SO.cs" />
+    <Compile Include="Domain\TEMP_SO_DETAIL.cs" />
+    <Compile Include="Domain\TEMP_STRUCK.cs" />
+    <Compile Include="Domain\TR_OP_DETAIL.cs" />
+    <Compile Include="Domain\TR_OP_HEADER.cs" />
+    <Compile Include="Domain\TRF_STOCK_DETAIL.cs" />
+    <Compile Include="Domain\TRF_STOCK_HEADER.cs" />
+    <Compile Include="Domain\TR_BELI_HEADER.cs" />
+    <Compile Include="Domain\TR_PO_HEADER.cs" />
+    <Compile Include="Domain\USP_RPTPENJUALAN.cs" />
+    <Compile Include="Domain\USP_RPTTOTALPENJUALAN.cs" />
+    <Compile Include="Domain\USP_RPTTOTALSALES.cs" />
+    <Compile Include="Domain\USP_TOTALMARGIN.cs" />
+    <Compile Include="Domain\VW_LAPORAN_HARIAN.cs" />
+    <Compile Include="dsGR_Sales_Margin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGR_Sales_Margin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsPerProduct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPerProduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsProductPerAccunt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsProductPerAccunt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptTotalPenjualan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptTotalPenjualan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JenDB01_Latih2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JenDB01_Latih2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JenDB01_Latih3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JenDB01_Latih3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JenDB01_LatihDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JenDB01_LatihDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LapHarian.aspx.cs">
+      <DependentUpon>LapHarian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laporan\LapHarian.aspx.designer.cs">
+      <DependentUpon>LapHarian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LapSales.aspx.cs">
+      <DependentUpon>LapSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laporan\LapSales.aspx.designer.cs">
+      <DependentUpon>LapSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\LapStock.aspx.cs">
+      <DependentUpon>LapStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laporan\LapStock.aspx.designer.cs">
+      <DependentUpon>LapStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Acara.aspx.cs">
+      <DependentUpon>Acara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Acara.aspx.designer.cs">
+      <DependentUpon>Acara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ArticleJenahara.aspx.cs">
+      <DependentUpon>ArticleJenahara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ArticleJenahara.aspx.designer.cs">
+      <DependentUpon>ArticleJenahara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Article.aspx.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Article.aspx.designer.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\EPC.aspx.cs">
+      <DependentUpon>EPC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\EPC.aspx.designer.cs">
+      <DependentUpon>EPC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterSupplierJenahara.aspx.cs">
+      <DependentUpon>MasterSupplierJenahara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterSupplierJenahara.aspx.designer.cs">
+      <DependentUpon>MasterSupplierJenahara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterSupplier.aspx.cs">
+      <DependentUpon>MasterSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterSupplier.aspx.designer.cs">
+      <DependentUpon>MasterSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\POTracer.aspx.cs">
+      <DependentUpon>POTracer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\POTracer.aspx.designer.cs">
+      <DependentUpon>POTracer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Promo.aspx.cs">
+      <DependentUpon>Promo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Promo.aspx.designer.cs">
+      <DependentUpon>Promo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Promo2.aspx.cs">
+      <DependentUpon>Promo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Promo2.aspx.designer.cs">
+      <DependentUpon>Promo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PurchaseOrderJenahara.aspx.cs">
+      <DependentUpon>PurchaseOrderJenahara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PurchaseOrderJenahara.aspx.designer.cs">
+      <DependentUpon>PurchaseOrderJenahara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PurchaseOrder.aspx.cs">
+      <DependentUpon>PurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PurchaseOrder.aspx.designer.cs">
+      <DependentUpon>PurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PurchaseOrderTracer.aspx.cs">
+      <DependentUpon>PurchaseOrderTracer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PurchaseOrderTracer.aspx.designer.cs">
+      <DependentUpon>PurchaseOrderTracer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Showroom.aspx.cs">
+      <DependentUpon>Showroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Showroom.aspx.designer.cs">
+      <DependentUpon>Showroom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ShowRoomEdit.aspx.cs">
+      <DependentUpon>ShowRoomEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ShowRoomEdit.aspx.designer.cs">
+      <DependentUpon>ShowRoomEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SKU.aspx.cs">
+      <DependentUpon>SKU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\SKU.aspx.designer.cs">
+      <DependentUpon>SKU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CARD_PAY_POS_TO_EDC_DA.cs" />
+    <Compile Include="Model\CustomObj\MS_SUPPLIER_DA.cs" />
+    <Compile Include="Master\Voucher.aspx.cs">
+      <DependentUpon>Voucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Voucher.aspx.designer.cs">
+      <DependentUpon>Voucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BRAND_DA.cs" />
+    <Compile Include="Model\CONFIG_DA.cs" />
+    <Compile Include="Model\CustomObj\SendMail_DA.cs" />
+    <Compile Include="Model\GLOBALCODE.cs" />
+    <Compile Include="Model\LAPORAN_DA.cs" />
+    <Compile Include="Model\LOGIN_DA.cs" />
+    <Compile Include="Model\MEMBER_DA.cs" />
+    <Compile Include="Model\MS_ACARA_DA.cs" />
+    <Compile Include="Model\MS_EMPLOYEE_DA.cs" />
+    <Compile Include="Model\MS_KDBRG_DA.cs" />
+    <Compile Include="Model\MS_LOG_DA.cs" />
+    <Compile Include="Model\MS_MEMBER_DA.cs" />
+    <Compile Include="Model\MS_MENU_DA.cs" />
+    <Compile Include="Model\MS_PO_DA.cs" />
+    <Compile Include="Model\MS_PROMO_DA.cs" />
+    <Compile Include="Model\MS_SHOWROOM_DA.cs" />
+    <Compile Include="Model\MS_SKU_DA.cs" />
+    <Compile Include="Model\MS_STOCK_DA.cs" />
+    <Compile Include="Model\MS_USER_DA.cs" />
+    <Compile Include="Model\MS_WAREHOUSE_DA.cs" />
+    <Compile Include="Model\PO_TRACER_DA.cs" />
+    <Compile Include="Model\PRINT_DA.cs" />
+    <Compile Include="Model\REPORT_DA.cs" />
+    <Compile Include="Model\SH_BAYAR_DA.cs" />
+    <Compile Include="Model\SO_SHOWLESALES_DA.cs" />
+    <Compile Include="Model\STOCK_OPNAME_DA.cs" />
+    <Compile Include="Model\TEMP_POS_TO_EDC_DA.cs" />
+    <Compile Include="Model\TESTDUMMY_DA.cs" />
+    <Compile Include="Model\TF_MUTASI_STOCK_POS_DA.cs" />
+    <Compile Include="Reports\srptAdjustmentManual.aspx.cs">
+      <DependentUpon>srptAdjustmentManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptAdjustmentManual.aspx.designer.cs">
+      <DependentUpon>srptAdjustmentManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\sRptMutasiStock.aspx.cs">
+      <DependentUpon>sRptMutasiStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\sRptMutasiStock.aspx.designer.cs">
+      <DependentUpon>sRptMutasiStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\srptSaldoAwal.aspx.cs">
+      <DependentUpon>srptSaldoAwal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptSaldoAwal.aspx.designer.cs">
+      <DependentUpon>srptSaldoAwal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\srptSales.aspx.cs">
+      <DependentUpon>srptSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptSales.aspx.designer.cs">
+      <DependentUpon>srptSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\srptSalesThru.aspx.cs">
+      <DependentUpon>srptSalesThru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptSalesThru.aspx.designer.cs">
+      <DependentUpon>srptSalesThru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\srptStock.aspx.cs">
+      <DependentUpon>srptStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptStock.aspx.designer.cs">
+      <DependentUpon>srptStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\srptStockOpname.aspx.cs">
+      <DependentUpon>srptStockOpname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptStockOpname.aspx.designer.cs">
+      <DependentUpon>srptStockOpname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\srptTotalPenjualanPerProduct.aspx.cs">
+      <DependentUpon>srptTotalPenjualanPerProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\srptTotalPenjualanPerProduct.aspx.designer.cs">
+      <DependentUpon>srptTotalPenjualanPerProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SRPTTRANSFERSTOCK.aspx.cs">
+      <DependentUpon>SRPTTRANSFERSTOCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SRPTTRANSFERSTOCK.aspx.designer.cs">
+      <DependentUpon>SRPTTRANSFERSTOCK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptLapHarianThn.aspx.cs">
+      <DependentUpon>RptLapHarianThn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptLapHarianThn.aspx.designer.cs">
+      <DependentUpon>RptLapHarianThn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptMutasiStockPOS.aspx.cs">
+      <DependentUpon>RptMutasiStockPOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptMutasiStockPOS.aspx.designer.cs">
+      <DependentUpon>RptMutasiStockPOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptPenjualan.aspx.cs">
+      <DependentUpon>RptPenjualan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptPenjualan.aspx.designer.cs">
+      <DependentUpon>RptPenjualan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptStock.aspx.cs">
+      <DependentUpon>RptStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptStock.aspx.designer.cs">
+      <DependentUpon>RptStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PrintStruck.aspx.cs">
+      <DependentUpon>PrintStruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\PrintStruck.aspx.designer.cs">
+      <DependentUpon>PrintStruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Sale.aspx.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Sale.aspx.designer.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Whole.aspx.cs">
+      <DependentUpon>Whole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Whole.aspx.designer.cs">
+      <DependentUpon>Whole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\WholeSalesManualInput.aspx.cs">
+      <DependentUpon>WholeSalesManualInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\WholeSalesManualInput.aspx.designer.cs">
+      <DependentUpon>WholeSalesManualInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\WholeSalesNew.aspx.cs">
+      <DependentUpon>WholeSalesNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\WholeSalesNew.aspx.designer.cs">
+      <DependentUpon>WholeSalesNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\WholeSalesWareHouse.aspx.cs">
+      <DependentUpon>WholeSalesWareHouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\WholeSalesWareHouse.aspx.designer.cs">
+      <DependentUpon>WholeSalesWareHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\DummyRpt.aspx.cs">
+      <DependentUpon>DummyRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\DummyRpt.aspx.designer.cs">
+      <DependentUpon>DummyRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\ReportPrintDummy.aspx.cs">
+      <DependentUpon>ReportPrintDummy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\ReportPrintDummy.aspx.designer.cs">
+      <DependentUpon>ReportPrintDummy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\TestCOMMPORT.aspx.cs">
+      <DependentUpon>TestCOMMPORT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\TestCOMMPORT.aspx.designer.cs">
+      <DependentUpon>TestCOMMPORT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\TestDecryptPass.aspx.cs">
+      <DependentUpon>TestDecryptPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\TestDecryptPass.aspx.designer.cs">
+      <DependentUpon>TestDecryptPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\TestReprint.aspx.cs">
+      <DependentUpon>TestReprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\TestReprint.aspx.designer.cs">
+      <DependentUpon>TestReprint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\TestRptDeisBI.aspx.cs">
+      <DependentUpon>TestRptDeisBI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\TestRptDeisBI.aspx.designer.cs">
+      <DependentUpon>TestRptDeisBI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\TestSearchShowroomForSalesPage.aspx.cs">
+      <DependentUpon>TestSearchShowroomForSalesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\TestSearchShowroomForSalesPage.aspx.designer.cs">
+      <DependentUpon>TestSearchShowroomForSalesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestDummy\TestSO.aspx.cs">
+      <DependentUpon>TestSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDummy\TestSO.aspx.designer.cs">
+      <DependentUpon>TestSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestPrint.aspx.cs">
+      <DependentUpon>TestPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPrint.aspx.designer.cs">
+      <DependentUpon>TestPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\GoodReceiveJenahara.aspx.cs">
+      <DependentUpon>GoodReceiveJenahara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warehouse\GoodReceiveJenahara.aspx.designer.cs">
+      <DependentUpon>GoodReceiveJenahara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\PopUp.aspx.cs">
+      <DependentUpon>PopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warehouse\PopUp.aspx.designer.cs">
+      <DependentUpon>PopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Margin.aspx.cs">
+      <DependentUpon>Margin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Margin.aspx.designer.cs">
+      <DependentUpon>Margin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportSales.aspx.cs">
+      <DependentUpon>ReportSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ReportSales.aspx.designer.cs">
+      <DependentUpon>ReportSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptTotalSales.aspx.cs">
+      <DependentUpon>RptTotalSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\RptTotalSales.aspx.designer.cs">
+      <DependentUpon>RptTotalSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Sales.aspx.cs">
+      <DependentUpon>Sales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Sales.aspx.designer.cs">
+      <DependentUpon>Sales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Wholesale.aspx.cs">
+      <DependentUpon>Wholesale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Wholesale.aspx.designer.cs">
+      <DependentUpon>Wholesale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\GoodReceive.aspx.cs">
+      <DependentUpon>GoodReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warehouse\GoodReceive.aspx.designer.cs">
+      <DependentUpon>GoodReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\StockOpname.aspx.cs">
+      <DependentUpon>StockOpname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warehouse\StockOpname.aspx.designer.cs">
+      <DependentUpon>StockOpname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\Warehouse.aspx.cs">
+      <DependentUpon>Warehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warehouse\Warehouse.aspx.designer.cs">
+      <DependentUpon>Warehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_707SROMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_707SROMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_909SROMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_909SROMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_909SROMDataSet_New.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_909SROMDataSet_New.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Download\" />
+    <Folder Include="Sales\Bon\" />
+    <Folder Include="Warehouse\Download\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatasetReport.xsc">
+      <DependentUpon>DatasetReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="DatasetPerProduct.xsc">
+      <DependentUpon>DatasetPerProduct.xsd</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="DatasetPerProduct.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatasetPerProduct.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DatasetPerProduct.xss">
+      <DependentUpon>DatasetPerProduct.xsd</DependentUpon>
+    </Content>
+    <None Include="DatasetReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatasetReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DatasetReport.xss">
+      <DependentUpon>DatasetReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="DatasetReportAccount.xsc">
+      <DependentUpon>DatasetReportAccount.xsd</DependentUpon>
+    </Content>
+    <None Include="DatasetReportAccount.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatasetReportAccount.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DatasetReportAccount.xss">
+      <DependentUpon>DatasetReportAccount.xsd</DependentUpon>
+    </Content>
+    <None Include="datasetSales.xsc">
+      <DependentUpon>datasetSales.xsd</DependentUpon>
+    </None>
+    <None Include="datasetSales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datasetSales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasetSales.xss">
+      <DependentUpon>datasetSales.xsd</DependentUpon>
+    </None>
+    <None Include="dsGR_Sales_Margin.xsc">
+      <DependentUpon>dsGR_Sales_Margin.xsd</DependentUpon>
+    </None>
+    <None Include="dsGR_Sales_Margin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGR_Sales_Margin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsGR_Sales_Margin.xss">
+      <DependentUpon>dsGR_Sales_Margin.xsd</DependentUpon>
+    </None>
+    <Content Include="DsPerProduct.xsc">
+      <DependentUpon>DsPerProduct.xsd</DependentUpon>
+    </Content>
+    <None Include="DsPerProduct.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPerProduct.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DsPerProduct.xss">
+      <DependentUpon>DsPerProduct.xsd</DependentUpon>
+    </Content>
+    <Content Include="DsProductPerAccunt.xsc">
+      <DependentUpon>DsProductPerAccunt.xsd</DependentUpon>
+    </Content>
+    <None Include="DsProductPerAccunt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsProductPerAccunt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DsProductPerAccunt.xss">
+      <DependentUpon>DsProductPerAccunt.xsd</DependentUpon>
+    </Content>
+    <None Include="dsRptTotalPenjualan.xsc">
+      <DependentUpon>dsRptTotalPenjualan.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptTotalPenjualan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptTotalPenjualan.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptTotalPenjualan.xss">
+      <DependentUpon>dsRptTotalPenjualan.xsd</DependentUpon>
+    </None>
+    <Content Include="JenDB01_LatihDataSet.xsc">
+      <DependentUpon>JenDB01_LatihDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="JenDB01_Latih2DataSet.xsc">
+      <DependentUpon>JenDB01_Latih2DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="JenDB01_Latih2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JenDB01_Latih2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="JenDB01_Latih2DataSet.xss">
+      <DependentUpon>JenDB01_Latih2DataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="JenDB01_Latih3DataSet.xsc">
+      <DependentUpon>JenDB01_Latih3DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="JenDB01_Latih3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JenDB01_Latih3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="JenDB01_Latih3DataSet.xss">
+      <DependentUpon>JenDB01_Latih3DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="JenDB01_LatihDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JenDB01_LatihDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="JenDB01_LatihDataSet.xss">
+      <DependentUpon>JenDB01_LatihDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\707SROM.azurewebsites.net.PublishSettings" />
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Move to Web.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile2.pubxml" />
+    <None Include="Upload\Format Master Article.xlsx" />
+    <None Include="Upload\format PO_upload.xlsx" />
+    <None Include="Upload\Format Upload Acara.xlsx" />
+    <None Include="Upload\Format Upload Promo.xlsx" />
+    <None Include="_707SROMDataSet.xsc">
+      <DependentUpon>_707SROMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_707SROMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_707SROMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_707SROMDataSet.xss">
+      <DependentUpon>_707SROMDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="_909SROMDataSet.xsc">
+      <DependentUpon>_909SROMDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="_909SROMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_909SROMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="_909SROMDataSet.xss">
+      <DependentUpon>_909SROMDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="_909SROMDataSet_New.xsc">
+      <DependentUpon>_909SROMDataSet_New.xsd</DependentUpon>
+    </Content>
+    <None Include="_909SROMDataSet_New.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_909SROMDataSet_New.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="_909SROMDataSet_New.xss">
+      <DependentUpon>_909SROMDataSet_New.xsd</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Laporan\LapStock.rdlc" />
+    <EmbeddedResource Include="Reports\PurchaseOrderReports.rdlc" />
+    <EmbeddedResource Include="Reports\srptAdjustmentManual.rdlc" />
+    <EmbeddedResource Include="Reports\srptSales.rdlc" />
+    <EmbeddedResource Include="Reports\srptSalesThru.rdlc" />
+    <EmbeddedResource Include="Reports\srptStock.rdlc" />
+    <EmbeddedResource Include="Reports\srptStockOpname.rdlc" />
+    <EmbeddedResource Include="Reports\srptTotalPenjualanPerProduct.rdlc" />
+    <EmbeddedResource Include="Reports\SRPTTRANSFERSTOCK.rdlc" />
+    <EmbeddedResource Include="Report\RptLapHarianTHn.rdlc" />
+    <EmbeddedResource Include="Report\rptPenjualan.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSalesHarian.rdlc" />
+    <EmbeddedResource Include="Report\rptStock.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptTotalMargin.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptTotalSales.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_DeisBI.rdlc" />
+    <EmbeddedResource Include="TestDummy\Report1.rdlc" />
+    <EmbeddedResource Include="TestDummy\Report2.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23963</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

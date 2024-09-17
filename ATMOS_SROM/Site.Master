@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ATMOS_SROM.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+     <link href="~/Content/Bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">  
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    ATMOS
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                Welcome, &nbsp;
+                <asp:Label ID="lbUName" runat="server"></asp:Label> &nbsp;:&nbsp;
+                <asp:Label ID="lbULevel" runat="server"></asp:Label>
+                <br />
+                &nbsp;
+                <asp:Label ID="lbUStore" runat="server"></asp:Label><br />                      
+                <asp:LinkButton ID="lbChangePass" runat="server" OnClick="lbChangePassClick" Text="Change Password"></asp:LinkButton>&nbsp;
+                <asp:LinkButton ID="lbMember" runat="server" OnClick="lbMember_Click" Text="Web Member" Visible ="false"></asp:LinkButton>
+                <br />                     
+                <asp:LinkButton ID="lbLogOut" runat="server" OnClick="lbLogOutClick" Text="LogOut"></asp:LinkButton>     
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal">
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

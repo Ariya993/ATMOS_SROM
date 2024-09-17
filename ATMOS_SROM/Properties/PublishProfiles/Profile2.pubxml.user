@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2016-01-13T09:18:12.0000000+07:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>08/06/2015 10:54:14</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>08/06/2015 15:58:28</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="bin/707SROM.dll">
+      <publishTime>09/21/2015 11:11:25</publishTime>
+    </File>
+    <File Include="bin/707SROM.pdb">
+      <publishTime>09/21/2015 11:11:24</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/08/2011 13:18:12</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>08/06/2011 22:01:40</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>05/08/2013 14:30:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.PointOfService.ControlBase.dll">
+      <publishTime>06/03/2014 13:35:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.PointOfService.dll">
+      <publishTime>06/03/2014 13:35:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>03/18/2010 22:27:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>12/30/2017 22:06:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>03/18/2010 22:27:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
+      <publishTime>03/18/2010 22:27:40</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>05/15/2015 02:39:10</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.dll">
+      <publishTime>05/15/2015 02:39:04</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>05/15/2015 02:39:12</publishTime>
+    </File>
+    <File Include="bin/MySql.Web.dll">
+      <publishTime>05/15/2015 02:39:12</publishTime>
+    </File>
+    <File Include="bin/Report/rptPenjualan.rdlc">
+      <publishTime>03/31/2016 15:09:36</publishTime>
+    </File>
+    <File Include="bin/Report/rptStock.rdlc">
+      <publishTime>11/17/2015 20:09:11</publishTime>
+    </File>
+    <File Include="bin/Report/rptTotalMargin.rdlc">
+      <publishTime>09/18/2015 17:42:08</publishTime>
+    </File>
+    <File Include="bin/Report/rptTotalSales.rdlc">
+      <publishTime>11/17/2015 19:56:17</publishTime>
+    </File>
+    <File Include="ChangePass.aspx">
+      <publishTime>02/10/2015 00:02:13</publishTime>
+    </File>
+    <File Include="ClassDiagram1.cd">
+      <publishTime>01/17/2018 19:34:14</publishTime>
+    </File>
+    <File Include="Configuration/Configuration.aspx">
+      <publishTime>10/12/2016 14:38:03</publishTime>
+    </File>
+    <File Include="Configuration/Member.aspx">
+      <publishTime>08/26/2016 15:51:36</publishTime>
+    </File>
+    <File Include="DatasetPerProduct.xsc">
+      <publishTime>02/25/2016 10:18:33</publishTime>
+    </File>
+    <File Include="DatasetPerProduct.xss">
+      <publishTime>02/25/2016 10:18:33</publishTime>
+    </File>
+    <File Include="DatasetReport.xsc">
+      <publishTime>06/20/2016 19:00:45</publishTime>
+    </File>
+    <File Include="DatasetReport.xss">
+      <publishTime>06/20/2016 19:00:45</publishTime>
+    </File>
+    <File Include="DatasetReportAccount.xsc">
+      <publishTime>02/25/2016 09:40:27</publishTime>
+    </File>
+    <File Include="DatasetReportAccount.xss">
+      <publishTime>02/25/2016 09:40:27</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/26/2015 14:28:14</publishTime>
+    </File>
+    <File Include="DsPerProduct.xsc">
+      <publishTime>02/25/2016 10:19:24</publishTime>
+    </File>
+    <File Include="DsPerProduct.xss">
+      <publishTime>02/25/2016 10:19:24</publishTime>
+    </File>
+    <File Include="DsProductPerAccunt.xsc">
+      <publishTime>02/25/2016 10:24:24</publishTime>
+    </File>
+    <File Include="DsProductPerAccunt.xss">
+      <publishTime>02/25/2016 10:24:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Image/all.jpg">
+      <publishTime>10/12/2017 13:50:43</publishTime>
+    </File>
+    <File Include="Image/b_drop.png">
+      <publishTime>05/12/2008 00:00:00</publishTime>
+    </File>
+    <File Include="Image/b_edit.png">
+      <publishTime>05/12/2008 00:00:00</publishTime>
+    </File>
+    <File Include="Image/b_loading.gif">
+      <publishTime>05/11/2015 10:07:15</publishTime>
+    </File>
+    <File Include="Image/b_ok.png">
+      <publishTime>09/01/2005 00:49:00</publishTime>
+    </File>
+    <File Include="Image/Logo.png">
+      <publishTime>03/14/2017 19:18:27</publishTime>
+    </File>
+    <File Include="Image/Logo_707.png">
+      <publishTime>01/04/2017 03:00:54</publishTime>
+    </File>
+    <File Include="Image/Logo_FP.png">
+      <publishTime>01/04/2017 03:01:00</publishTime>
+    </File>
+    <File Include="Image/Logo_Melissa.png">
+      <publishTime>01/04/2017 03:00:43</publishTime>
+    </File>
+    <File Include="Image/Logo_SDS.png">
+      <publishTime>01/04/2017 03:01:09</publishTime>
+    </File>
+    <File Include="Image/Logo_SOS.png">
+      <publishTime>01/04/2017 03:23:16</publishTime>
+    </File>
+    <File Include="Image/Logo_Superga.png">
+      <publishTime>01/04/2017 03:01:17</publishTime>
+    </File>
+    <File Include="Image/pdf.png">
+      <publishTime>09/14/2004 14:22:10</publishTime>
+    </File>
+    <File Include="Laporan/LapHarian.aspx">
+      <publishTime>10/29/2015 10:09:14</publishTime>
+    </File>
+    <File Include="Laporan/LapSales.aspx">
+      <publishTime>03/29/2017 11:58:05</publishTime>
+    </File>
+    <File Include="Laporan/LapStock.aspx">
+      <publishTime>06/20/2016 17:57:38</publishTime>
+    </File>
+    <File Include="Master/Acara.aspx">
+      <publishTime>09/07/2015 12:05:29</publishTime>
+    </File>
+    <File Include="Master/Article.aspx">
+      <publishTime>09/07/2015 05:51:22</publishTime>
+    </File>
+    <File Include="Master/EPC.aspx">
+      <publishTime>05/17/2017 10:32:05</publishTime>
+    </File>
+    <File Include="Master/Member.aspx">
+      <publishTime>08/26/2016 11:01:49</publishTime>
+    </File>
+    <File Include="Master/Promo.aspx">
+      <publishTime>09/09/2015 12:55:21</publishTime>
+    </File>
+    <File Include="Master/Promo2.aspx">
+      <publishTime>03/29/2017 12:49:33</publishTime>
+    </File>
+    <File Include="Master/PurchaseOrder.aspx">
+      <publishTime>09/07/2015 05:47:57</publishTime>
+    </File>
+    <File Include="Master/Showroom.aspx">
+      <publishTime>08/12/2016 14:37:03</publishTime>
+    </File>
+    <File Include="Master/User.aspx">
+      <publishTime>09/19/2016 11:02:46</publishTime>
+    </File>
+    <File Include="Master/Voucher.aspx">
+      <publishTime>10/24/2017 18:34:20</publishTime>
+    </File>
+    <File Include="Report/Margin.aspx">
+      <publishTime>09/04/2015 18:07:04</publishTime>
+    </File>
+    <File Include="Report/ReportSales.aspx">
+      <publishTime>08/31/2015 00:21:44</publishTime>
+    </File>
+    <File Include="Report/RptPenjualan.aspx">
+      <publishTime>11/18/2015 09:17:24</publishTime>
+    </File>
+    <File Include="Report/RptStock.aspx">
+      <publishTime>11/17/2015 19:12:30</publishTime>
+    </File>
+    <File Include="Report/RptTotalSales.aspx">
+      <publishTime>09/18/2015 17:52:04</publishTime>
+    </File>
+    <File Include="Reports/srptAdjustmentManual.aspx">
+      <publishTime>02/25/2016 11:00:15</publishTime>
+    </File>
+    <File Include="Reports/srptSaldoAwal.aspx">
+      <publishTime>06/07/2016 18:26:34</publishTime>
+    </File>
+    <File Include="Reports/srptSales.aspx">
+      <publishTime>02/25/2016 10:58:59</publishTime>
+    </File>
+    <File Include="Reports/srptSalesThru.aspx">
+      <publishTime>02/25/2016 11:56:14</publishTime>
+    </File>
+    <File Include="Reports/srptStock.aspx">
+      <publishTime>02/25/2016 14:07:15</publishTime>
+    </File>
+    <File Include="Reports/srptStockOpname.aspx">
+      <publishTime>02/25/2016 11:01:20</publishTime>
+    </File>
+    <File Include="Reports/srptTotalPenjualanPerProduct.aspx">
+      <publishTime>02/25/2016 11:00:23</publishTime>
+    </File>
+    <File Include="Reports/SRPTTRANSFERSTOCK.aspx">
+      <publishTime>02/25/2016 11:02:02</publishTime>
+    </File>
+    <File Include="Sales/PrintStruck.aspx">
+      <publishTime>03/14/2017 16:47:05</publishTime>
+    </File>
+    <File Include="Sales/Sale.aspx">
+      <publishTime>02/15/2016 17:04:51</publishTime>
+    </File>
+    <File Include="Sales/Sales.aspx">
+      <publishTime>09/21/2015 10:06:09</publishTime>
+    </File>
+    <File Include="Sales/Whole.aspx">
+      <publishTime>10/11/2015 14:01:11</publishTime>
+    </File>
+    <File Include="Sales/Wholesale.aspx">
+      <publishTime>09/21/2015 09:59:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>08/06/2015 10:54:16</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>09/21/2015 10:37:01</publishTime>
+    </File>
+    <File Include="Styles/b_loading.gif">
+      <publishTime>04/05/2016 17:30:15</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>08/13/2015 14:40:04</publishTime>
+    </File>
+    <File Include="TestPrint.aspx">
+      <publishTime>01/10/2015 13:33:36</publishTime>
+    </File>
+    <File Include="Upload/Upload.aspx">
+      <publishTime>09/21/2015 11:48:45</publishTime>
+    </File>
+    <File Include="Warehouse/GoodReceive.aspx">
+      <publishTime>09/17/2015 15:48:43</publishTime>
+    </File>
+    <File Include="Warehouse/PopUp.aspx">
+      <publishTime>09/21/2015 18:39:35</publishTime>
+    </File>
+    <File Include="Warehouse/StockOpname.aspx">
+      <publishTime>09/18/2015 13:45:42</publishTime>
+    </File>
+    <File Include="Warehouse/Warehouse.aspx">
+      <publishTime>09/16/2015 18:11:41</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/21/2015 11:11:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
