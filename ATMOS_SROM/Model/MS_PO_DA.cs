@@ -174,7 +174,7 @@ namespace ATMOS_SROM.Model
             try
             {
                 SqlConnection Connection = new SqlConnection(conString);
-                using (SqlCommand command = new SqlCommand(string.Format("Select ID, ID_PO, ITEM_CODE, COGS, PRICE, QTY, QTY_TIBA, BARCODE from vw_detailPO {0}", where), Connection))
+                using (SqlCommand command = new SqlCommand(string.Format("Select ID, ID_PO, ITEM_CODE, COGS, PRICE, QTY, QTY_TIBA, BARCODE from vw_detailPO {0} ORDER BY ID DESC", where), Connection))
                 {
                     command.CommandType = CommandType.Text;
                     Connection.Open();
