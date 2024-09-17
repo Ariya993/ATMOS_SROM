@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
+
+
         Change Password
     </h2>    
     <div id="DivMessage" runat="server" visible="false">
