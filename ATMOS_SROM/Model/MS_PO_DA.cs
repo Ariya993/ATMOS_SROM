@@ -130,7 +130,7 @@ namespace ATMOS_SROM.Model
             {
                 SqlConnection Connection = new SqlConnection(conString);
                 using (SqlCommand command = new SqlCommand(string.Format("Select ID, NO_PO, PO_REFF, DATE, BRAND, CONTACT, POSITION, EMAIL, ADDRESS, " +
-                    " PHONE, QTY, STATUS, CREATED_BY, CREATED_DATE, KODE_SUPPLIER, SUPPLIER from MS_PO {0} ORDER BY ID DESC", where), Connection))
+                    " PHONE, QTY, STATUS, CREATED_BY, CREATED_DATE, KODE_SUPPLIER, SUPPLIER from MS_PO {0}", where), Connection))
                 {
                     command.CommandType = CommandType.Text;
                     Connection.Open();
