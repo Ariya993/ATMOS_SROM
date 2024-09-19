@@ -17,6 +17,7 @@ namespace ATMOS_SROM.Account
         {
             if (!Page.IsPostBack)
             {
+                var a ="";
                 bindUserName();
             }
         }
